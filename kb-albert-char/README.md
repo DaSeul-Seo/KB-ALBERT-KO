@@ -62,7 +62,7 @@ $ mkdir model
 ```
 
 ### 4. Using with Transformers from Hugging Face
-추가 예제는 [링크](https://github.com/KB-Bank-AI/KB-ALBERT-KO/kb-albert-char/examples/README.md) 를 참고해주시기 바랍니다.
+추가 예제는 [링크](https://github.com/KB-Bank-AI/KB-ALBERT-KO/tree/master/kb-albert-char/examples) 를 참고해주시기 바랍니다.
 
 - For PyTorch
     ```python
