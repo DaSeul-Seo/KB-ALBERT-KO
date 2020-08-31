@@ -97,10 +97,7 @@ $ mkdir model
     
     # Load Model from pytorch checkpoint
     tf_model = TFAlbertModel.from_pretrained(kb_albert_model_path, from_pt=True)
-  
-    # Load Model from tensorflow checkpoint
-    tf_model = TFAlbertModel.from_pretrained(kb_albert_model_path)
-  
+    
     # inference text input to sentence vector of last layer
     text = '방카슈랑스는 금융의 겸업화 추세에 부응하여 금융산업의 선진화를 도모하고 금융소비자의 편익을 위하여 도입되었습니다.'
     tf_inputs = tokenizer(text, return_tensors='tf')
@@ -120,6 +117,12 @@ $ mkdir model
     #   -0.08492979]
     #  [ 0.04058535 -0.04625027  0.01748611 ... -0.0016344  -0.06360036
     #    0.04017936]]], shape=(1, 54, 768), dtype=float32)
+    ```
+
+    `tf_model.h5`가 모델 디렉토리 경로에 있는 경우 직접 불러올 수 있음 
+    ```python
+    # Load Model from tensorflow checkpoint
+    tf_model = TFAlbertModel.from_pretrained(kb_albert_model_path)
     ```
 
 ##  Sub-tasks
